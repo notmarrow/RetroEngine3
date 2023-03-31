@@ -8,12 +8,13 @@ namespace Retro {
 		_scoreT.setFillColor(sf::Color::Black);
 		_scoreT.setOrigin(_scoreT.getGlobalBounds().width / 2, _scoreT.getGlobalBounds().height / 2);
 		_scoreT.setPosition(_data->window.getSize().x / 2, _data->window.getSize().y / 6);
+		// Se posiciona el texto de puntuación y se selecciona su color, fuente y tamaño
 	}
 	void ScoreHud::_draw() {
 		_data->window.draw(_scoreT);
 	}
 	void ScoreHud::scoreUpdate(int score) {
 		_scoreT.setString(std::to_string(score));
-	}
+	} // Cambia el texto que mostrará el scorehud
 
 };

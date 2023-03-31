@@ -1,6 +1,9 @@
 #pragma once
 #include "GData.h"
 namespace Retro {
+	/*
+		La clase GameOver es un estado que se utiliza cuando el jugador pierde y el juego termina
+	*/
 	class GameOver : public State {
 	public:
 		GameOver(GDref data);

@@ -1,6 +1,9 @@
 #pragma once
 #include "appincludes.h"
 namespace Retro {
+	/*
+		La clase collider se encarga de checar las colisiones entre dos objetos
+	*/
 	class Collider {
 	public:
 		Collider();

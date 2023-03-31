@@ -1,4 +1,68 @@
-﻿  ScoreHud.cpp
+﻿  Animator.cpp
+  AssetMan.cpp
+  Collider.cpp
+  Game.cpp
+  GameOver.cpp
+  InputMan.cpp
+D:\School\Progra3\RetroEngine3\RetroEngine3\InputMan.cpp(6,116): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+D:\School\Progra3\RetroEngine3\RetroEngine3\InputMan.cpp(6,87): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+D:\School\Progra3\RetroEngine3\RetroEngine3\InputMan.cpp(6,62): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+D:\School\Progra3\RetroEngine3\RetroEngine3\InputMan.cpp(6,41): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+  MainGame.cpp
+D:\School\Progra3\RetroEngine3\RetroEngine3\MainGame.cpp(60,22): warning C4018: '<': signed/unsigned mismatch
+D:\School\Progra3\RetroEngine3\RetroEngine3\MainGame.cpp(67,22): warning C4018: '<': signed/unsigned mismatch
+  MainMenu.cpp
+  Obstacle.cpp
+D:\School\Progra3\RetroEngine3\RetroEngine3\Obstacle.cpp(13,45): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+D:\School\Progra3\RetroEngine3\RetroEngine3\Obstacle.cpp(19,45): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+D:\School\Progra3\RetroEngine3\RetroEngine3\Obstacle.cpp(25,45): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+  Player.cpp
+  SM.cpp
+  ScoreHud.cpp
 D:\School\Progra3\RetroEngine3\RetroEngine3\ScoreHud.cpp(10,80): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
@@ -9,4 +73,8 @@ D:\School\Progra3\RetroEngine3\RetroEngine3\ScoreHud.cpp(10,49): warning C4244: 
           [
               T=unsigned int
           ]
+  SplashScreen.cpp
+  main.cpp
+  Generating Code...
+D:\School\Progra3\RetroEngine3\RetroEngine3\AssetMan.cpp(22): warning C4715: 'Retro::AssetMan::getTexture': not all control paths return a value
   RetroEngine3.vcxproj -> D:\School\Progra3\RetroEngine3\Debug\RetroEngine3.exe

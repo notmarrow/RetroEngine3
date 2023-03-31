@@ -2,6 +2,9 @@
 #include "appincludes.h"
 
 namespace Retro {
+	/*
+		La clase input manager se encarga de manejar la interacción entre el usuario y el programa
+	*/
 	class InputMan {
 	public: 
 		InputMan(){}

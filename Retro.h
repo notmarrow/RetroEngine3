@@ -1,6 +1,9 @@
 #pragma once
 
 namespace Retro {
+	/*
+		La clase state es una clase virtual pura de la cual heredan los diferentes estados del juego
+	*/
 	class State {
 	public:
 		virtual void _init() = 0;
