@@ -1,0 +1,12 @@
+﻿  ScoreHud.cpp
+D:\School\Progra3\RetroEngine3\RetroEngine3\ScoreHud.cpp(10,80): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+D:\School\Progra3\RetroEngine3\RetroEngine3\ScoreHud.cpp(10,49): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+  RetroEngine3.vcxproj -> D:\School\Progra3\RetroEngine3\Debug\RetroEngine3.exe
