@@ -3,6 +3,16 @@
   Collider.cpp
   Game.cpp
   GameOver.cpp
+D:\School\Progra3\RetroEngine3\RetroEngine3\GameOver.cpp(42,55): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+D:\School\Progra3\RetroEngine3\RetroEngine3\GameOver.cpp(50,59): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
   InputMan.cpp
 D:\School\Progra3\RetroEngine3\RetroEngine3\InputMan.cpp(6,116): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
@@ -41,8 +51,8 @@ D:\School\Progra3\RetroEngine3\RetroEngine3\InputMan.cpp(6,41): warning C4244: '
               T=int
           ]
   MainGame.cpp
-D:\School\Progra3\RetroEngine3\RetroEngine3\MainGame.cpp(60,22): warning C4018: '<': signed/unsigned mismatch
-D:\School\Progra3\RetroEngine3\RetroEngine3\MainGame.cpp(67,22): warning C4018: '<': signed/unsigned mismatch
+D:\School\Progra3\RetroEngine3\RetroEngine3\MainGame.cpp(71,22): warning C4018: '<': signed/unsigned mismatch
+D:\School\Progra3\RetroEngine3\RetroEngine3\MainGame.cpp(79,22): warning C4018: '<': signed/unsigned mismatch
   MainMenu.cpp
   Obstacle.cpp
 D:\School\Progra3\RetroEngine3\RetroEngine3\Obstacle.cpp(13,45): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data

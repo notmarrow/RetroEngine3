@@ -6,7 +6,7 @@ namespace Retro {
 	*/
 	class GameOver : public State {
 	public:
-		GameOver(GDref data);
+		GameOver(GDref data, int score);
 		void _init();
 		void _inputManager();
 		void _update(float deltaTime);
@@ -15,5 +15,10 @@ namespace Retro {
 		GDref _data;
 		sf::Sprite _bg;
 		sf::Sprite _menu;
+
+		sf::Text scoreText;
+		sf::Text highScoreText;
+		int score;
+		int highScore;
 	};
 };

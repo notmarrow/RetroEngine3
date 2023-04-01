@@ -14,6 +14,9 @@
 #define GRAVITY 350.0f
 #define JUMP_SPEED 350.0f
 #define JUMP_DURATION 0.6f
+#define GAME_OVER_TIME 2.0f
+
+#define HIGH_SCORE_FILEPATH "./res/HighScore.txt"
 
 enum GameStates {
 	gameReady, gameOver
@@ -29,6 +32,7 @@ enum GameStates {
 #define DINO1_PATH "D:/School/Progra3/RetroEngine3/RetroEngine3/res/Dino_Run01.png"
 #define DINO2_PATH "D:/School/Progra3/RetroEngine3/RetroEngine3/res/Dino_Run02.png"
 #define GROUND_PATH "D:/School/Progra3/RetroEngine3/RetroEngine3/res/Ground.png"
+#define POINT_SOUND_PATH "./res/point.wav"
 
 // UI Paths
 #define RETRY_PATH "D:/School/Progra3/RetroEngine3/RetroEngine3/res/Retry.png"

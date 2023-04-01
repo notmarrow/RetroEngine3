@@ -1,8 +1,15 @@
 #include "MainGame.h"
 #include "MainMenu.h"
+#include "GameOver.h"
 namespace Retro {
 	MainGame::MainGame(GDref data) : _data(data) {}
 	void MainGame::_init() {
+		if (!pointSoundBuffer.loadFromFile(POINT_SOUND_PATH)) {
+			std::cout << "Couldn't load sound effect" << std::endl; // Se checa si es posible cargar el sonido al buffer
+		}
+		pointSound.setBuffer(pointSoundBuffer);
+		// Se inicializa el sonido con el buffer
+
 		this->_data->Asset.TextureLoad("home", HOME_PATH);
 		this->_data->Asset.TextureLoad("cactusl", CACTUSL_PATH);
 		this->_data->Asset.TextureLoad("cactuss", CACTUSS_PATH);
@@ -64,6 +71,7 @@ namespace Retro {
 			for (int i = 0; i < obsSprites.size(); i++) {
 				if (collider.checkCollision(dino->getSprite(), 0.75f , obsSprites.at(i), 0.75f)) {
 					gameState = GameStates::gameOver;
+					_clockcactus.restart();
 				}
 			} // Se itera sobre el vector de obstáculos para checar cada uno por colisiones
 
@@ -71,11 +79,17 @@ namespace Retro {
 			for (int i = 0; i < scoreSprites.size(); i++) {
 				if (collider.checkCollision(dino->getSprite(), 0.75f, scoreSprites.at(i), 1000.0f)) {
 					// El tamaño en y se hace de 1000 para asegurar que el jugador lo tocará cuando pase sobre un obstáculo
+					pointSound.play();
 					score += 100;
 					scorehud->scoreUpdate(score);
 					scoreSprites.erase(scoreSprites.begin() + i);
 				}
 			} // Se itera sobre el vector de triggers de puntuación para checar cada uno por colisiones
+		}
+		if (gameState == GameStates::gameOver){
+			if (_clockcactus.getElapsedTime().asSeconds() > GAME_OVER_TIME) {
+				_data->statemachine.Addsref(sref(new GameOver(_data, score)), true);
+			}
 		}
 	}
 

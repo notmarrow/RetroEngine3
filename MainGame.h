@@ -29,5 +29,8 @@ namespace Retro {
 		ScoreHud* scorehud;
 		int gameState; // gameState se usa para registrar si el jugador esta jugando o si el juego ha terminado
 		int score;
+
+		sf::SoundBuffer pointSoundBuffer;
+		sf::Sound pointSound;
 	};
 };
